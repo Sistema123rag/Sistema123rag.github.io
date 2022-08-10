@@ -1,0 +1,68 @@
+-- phpMyAdmin SQL Dump
+-- version 3.2.0.1
+-- http://www.phpmyadmin.net
+--
+-- Servidor: localhost
+-- Tiempo de generación: 07-08-2022 a las 18:12:29
+-- Versión del servidor: 5.1.36
+-- Versión de PHP: 5.3.0
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+
+--
+-- Base de datos: `documentos`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `documento`
+--
+
+CREATE TABLE IF NOT EXISTS `documento` (
+  `id_doc` int(11) NOT NULL AUTO_INCREMENT,
+  `ci` int(11) NOT NULL,
+  `nombre` varchar(25) NOT NULL,
+  `ap_pat` varchar(25) NOT NULL,
+  `ap_mat` varchar(25) NOT NULL,
+  `estado` varchar(250) NOT NULL,
+  `codigo` varchar(250) NOT NULL,
+  `tamano` int(250) NOT NULL,
+  `tipo` varchar(250) NOT NULL,
+  `nombre_archivo` varchar(250) NOT NULL,
+  PRIMARY KEY (`id_doc`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Volcar la base de datos para la tabla `documento`
+--
+
+INSERT INTO `documento` (`id_doc`, `ci`, `nombre`, `ap_pat`, `ap_mat`, `estado`, `codigo`, `tamano`, `tipo`, `nombre_archivo`) VALUES
+(1, 1, 'Luis', 'Peres', 'Casas', 'Falta de pago del tramite', '212.10.01.1', 124565, 'pdf', 'pdf'),
+(2, 4578965, 'Lola', 'Bony', 'Bony', 'Tramite observado', '212.30.02.4578965', 124565, 'pdf', 'pdf'),
+(3, 1010, 'Rene', 'Flores', 'Carrillo', 'En tramite', '212.20.02.1010', 149895, 'application/pdf', 'Agenda2021.pdf');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `usuario`
+--
+
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `id_us` int(11) NOT NULL AUTO_INCREMENT,
+  `nombre` varchar(25) NOT NULL,
+  `ap_pat` varchar(25) NOT NULL,
+  `ap_mat` varchar(25) NOT NULL,
+  `usuario` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  PRIMARY KEY (`id_us`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+
+--
+-- Volcar la base de datos para la tabla `usuario`
+--
+
+INSERT INTO `usuario` (`id_us`, `nombre`, `ap_pat`, `ap_mat`, `usuario`, `password`) VALUES
+(1, 'Veronica', 'Suxo', 'Calle', 'veronicasc', '123'),
+(2, 'Edwin', 'Tito', 'Peres', 'edwintmz', '1234'),
+(3, 'Rene', 'Lopes', 'CAlle', 'renelc', '147');

@@ -1,0 +1,22 @@
+.container1{
+    background: #fff;
+    margin-top: AUTO;
+    padding: 3px;
+    border-radius: 3%;
+    overflow: hidden;
+}
+
+.cuadro{
+    width:400px; 
+    margin: auto; 
+    padding: 30px 10px;
+    background: hsla(147, 53%, 61%, 0.507)
+    
+}
+b {
+    
+    text-align: justify;
+    color: #030303;
+    margin: auto; 
+    width: 100%; 
+}

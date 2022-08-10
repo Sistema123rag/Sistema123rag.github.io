@@ -1,0 +1,112 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    background: url('2img.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.padre{
+    width: 100%;
+    padding: 25px;
+    border-color: #9e9797;
+}
+
+header{
+    width: 100%;
+    padding: 25px;
+    border-color: #9e9797;
+}
+
+.container{
+    background: #fff;
+    margin-top: 150px;
+    padding: 5px;
+    border-radius: 2%;
+}
+
+.titulo{
+    text-align: center;
+    padding: 20px 25px 0;
+    color: #1a2537;
+    font-size: 35px;
+}
+
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 100%;
+    padding: 10px;
+    border: 1px;
+}
+
+.tex_cont{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    color: hsla(0, 5%, 64%, 0.575);
+    border-radius: 5px;
+}
+input{
+    padding: 10px;
+}
+
+input:focus{
+    outline: solid rgb(158, 158, 158) 2px;
+}
+
+.cuenta
+.boton{
+    border: none;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #1a2537;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.cuenta:hover{
+    background: cadetblue;
+}
+
+
+.alerta{
+    text-align: center;
+    color: rgb(248, 247, 247);
+    background: red;
+    padding: 12px;
+}
+
+.ok{
+    text-align: center;
+    color: rgb(248, 247, 247);
+    background: rgb(3, 151, 3);
+    padding: 12px; 
+}
+
+.link{
+    text-decoration: none;
+    color:#1a2537;
+    font-weight: 600;
+    text-align: right;
+}
+
+.link:hover{
+    color: cadetblue;
+}
+
+@media(min-width:768px)
+{
+    .container{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
